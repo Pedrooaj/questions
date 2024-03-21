@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Questões</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+</head>
+<body style="width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <h1 style="margin-top: 1%;" class="text-xl mb-5">Atividade Raciocínio lógico algoritimico</h1>
+    <div style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;" >
+
+        
+<div id="info" class="h-5/6 bg-blue-400 rounded-xl" style="flex-direction: column;  width: 60%; display: flex; align-items: center; justify-content: center; gap: 40px;">
+    <h1 style="font-size: 1.6rem;">Escolha sua questão</h1>
+    <div style="display: flex; gap: 40px;">
+        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+            Questão-1
+          </button>
+        
+          <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-md max-h-full">
+        
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                              Tipo De Triângulo
+                          </h3>
+                          <button  type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only" >Close modal</span>
+                          </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-4 md:p-5">
+                          <form style="display: flex; flex-direction: column; justify-content: center;" class="space-y-4" action="#">
+                              <div>
+                                  <label for="valor-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Valor 1</label>
+                                  <input type="number" name="valor-1" id="valor-1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite o primeiro lado do triângulo" required />
+                              </div>
+                              <div>
+                                  <label for="valor-2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Valor 2</label>
+                                  <input type="number" name="valor-2" id="valor-2" placeholder="Digite o segundo lado do triângulo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                              </div>
+                              <div>
+                                <label for="valor-3" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Valor 3</label>
+                                <input type="number" name="valor-3" id="valor-3" placeholder="Digite o terceiro lado do triângulo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                            </div>
+                                <h1 id="resposta" style="display: none; width: 100%; justify-content: center;"></h1>
+                              <button onclick="quest1()" type="button"  class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calcular</button>
+        
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button data-modal-target="authentication-modal2" data-modal-toggle="authentication-modal2" class="block text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+            Questão-2
+          </button>
+        
+          <div id="authentication-modal2" tabindex="-2" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-md max-h-full">
+        
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                              Imposto do carro
+                          </h3>
+                          <button  type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal2">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only">Close modal</span>
+                          </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-4 md:p-5">
+                          <form style="display: flex; flex-direction: column; justify-content: center;" class="space-y-4" action="#">
+                              <div>
+                                  <label for="valor-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Valor 1</label>
+                                  <input type="number" name="valor-1" id="valor-1-q2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite o valor do carro sem imposto" required />
+                              </div>
+                                <h1 id="resposta-2" style="display: none; width: 100%; justify-content: center;"></h1>
+                              <button onclick="quest2()" type="button"  class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calcular</button>
+        
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button data-modal-target="authentication-modal3" data-modal-toggle="authentication-modal3" class="block text-white bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+            Questão-3
+          </button>
+        
+          <div id="authentication-modal3" tabindex="-2" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-md max-h-full">
+        
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                              Retirar Cheques
+                          </h3>
+                          <button  type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal3">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only">Close modal</span>
+                          </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-4 md:p-5">
+                          <form style="display: flex; flex-direction: column; justify-content: center;" class="space-y-4" action="#">
+                              <div>
+                                  <label for="valor-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Conta corrente</label>
+                                  <input type="number" name="valor-1" id="valor-1-q3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite o valor de seu salário" required />
+                              </div>
+                              <div>
+                                <label id="valor2-q3"  for="valor-2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cheque 1</label>
+                                <input  type="number" name="valor-2" id="valor2q3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite o valor do seu primeiro cheque" required />
+                            </div>
+                            <div>
+                                <label id="valor3q3"  for="valor-3" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cheque 2</label>
+                                <input  type="number" name="valor-3" id="valor-3q3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite o valor de seu segundo cheque" required />
+                            </div>
+                                <h1 id="resposta-3" style="display: none; width: 100%; justify-content: center;"></h1>
+                              <button onclick="quest3()" type="button"  class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calcular</button>
+        
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <button data-modal-target="authentication-modal4" data-modal-toggle="authentication-modal4" class="block text-white bg-rose-300 hover:bg-rose-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+            Questão-4
+          </button>
+        
+          <div id="authentication-modal4" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-md max-h-full">
+        
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                              Calculo de IMC
+                          </h3>
+                          <button  type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal4">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only" >Close modal</span>
+                          </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-4 md:p-5">
+                          <form style="display: flex; flex-direction: column; justify-content: center;" class="space-y-4" action="#">
+                              <div>
+                                  <label for="valor-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Altura</label>
+                                  <input type="number" name="valor-1-q4" id="valor-1-q4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite sua Altura" required />
+                              </div>
+                              <div>
+                                  <label for="valor-2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Peso</label>
+                                  <input type="number" name="valor-2-q4" id="valor-2-q4" placeholder="Digite seu peso" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                              </div>
+                                <h1 id="resposta-4" style="display: none; width: 100%; justify-content: center;"></h1>
+                              <button onclick="quest4()" type="button"  class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calcular</button>
+        
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <button data-modal-target="authentication-modal5" data-modal-toggle="authentication-modal5" class="block text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+            Questão-5
+          </button>
+        
+          <div id="authentication-modal5" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-md max-h-full">
+        
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                              Calculo de Média
+                          </h3>
+                          <button  type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal5">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only" >Close modal</span>
+                          </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-4 md:p-5">
+                          <form style="display: flex; flex-direction: column; justify-content: center;" class="space-y-4" action="#">
+                              <div>
+                                  <label for="valor-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nota 1</label>
+                                  <input type="number" name="valor-1-q5" id="valor-1-q5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Digite sua Nota" required />
+                              </div>
+                              <div>
+                                  <label for="valor-2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nota 2</label>
+                                  <input type="number" name="valor-2-q5" id="valor-2-q5" placeholder="Digite sua Nota" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                              </div>
+                              <div>
+                                <label for="valor-2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nota 3</label>
+                                <input type="number" name="valor-3-q5" id="valor-3-q5" placeholder="Digite sua Nota" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                            </div>
+        
+        <div class="flex items-center mb-4">
+            <input id="default-radio-1" type="radio" value="0" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Média Aritimetica</label>
+        </div>
+        <div class="flex items-center">
+            <input checked id="default-radio-2" type="radio" value="1" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Média Ponderada</label>
+        </div>
+        
+                                <h1 id="resposta-5" style="display: none; width: 100%; justify-content: center;"></h1>
+                              <button onclick="quest5()" type="button"  class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calcular</button>
+        
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+    <footer style=" display: flex; align-items: center; justify-content: center; height: 7%; background-color: aqua; width: 100%;">Desenvolvido por Pedrooaj 2024 &copy;</footer>
+    <script src="./app.js"></script>
+</body>
+</html>
