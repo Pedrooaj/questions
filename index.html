@@ -7,19 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
 </head>
-<body style="width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
-    @media (max-width: 768px) {
-    width: 100vw; height: 100vh;}">
+<body style="width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-<div style="width: 100%; height: 100%;" id="container">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%;" id="container">
     
-    <h1 style="margin-top: 1%;" class="text-xl mb-5">Atividade Raciocínio lógico algoritimico</h1>
-    <div style="height: 80%; width: 100%; display: flex; justify-content: center; align-items: center;" >
+    <h1 style="margin-top: 1%;" class=" text-xl mb-5">Atividade Raciocínio lógico algoritimico</h1>
+    <div style="width: 30%; 
+    height: 80%;"   >
         
-    <div style="@media (max-width: 768px) {
-    width: 90%; height: 100%;}" id="info" class="h-5/6 bg-blue-400 rounded-xl" style="flex-direction: column;  width: 60%; display: flex; align-items: center; justify-content: center; gap: 40px;">
-    <h1 style="font-size: 1.6rem;">Escolha sua questão</h1>
-    <div style="display: flex; gap: 40px;">
+    <div style="display: flex; align-items: center; flex-direction: column; justify-content: center;" id="info" class="h-5/6 bg-blue-400 rounded-xl" style="flex-direction: column;  width: 60%; display: flex; align-items: center; justify-content: center; gap: 40px;">
+    <h1 style="margin: auto; font-size: 1.6rem;">Escolha sua questão</h1>
+    <div style="display: flex; flex-direction: column; width: 50%; height: 100%; align-items: center; padding: 15px; gap: 40px;">
         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
             Questão-1
           </button>
@@ -239,7 +237,7 @@
         </div>
     </div>
     <footer style="@media (max-width: 768px) {
-        width: 100vw; height: 10%;}   display: flex; align-items: center; justify-content: center; height: 7%; background-color: aqua; width: 100%;">Desenvolvido por Pedrooaj 2024 &copy;</footer>
+        width: 100%; height: 10%;} position: absolute; bottom: 0; display: flex; align-items: center; justify-content: center; height: 7%; background-color: aqua; width: 100%;">Desenvolvido por Pedrooaj 2024 &copy;</footer>
 </div>
     <script src="./app.js"></script>
 </body>
